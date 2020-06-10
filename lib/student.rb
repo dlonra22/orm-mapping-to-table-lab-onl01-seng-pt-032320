@@ -31,7 +31,8 @@ def self.drop_table
 end
 
 def save
-  sql = INSERT INTO students(name, grade) VALUES 
+  sql = <<-SQL 
+        INSERT INTO students(name, grade) VALUES 
 
 
 
