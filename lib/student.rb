@@ -25,6 +25,15 @@ def self.drop_table
         IF EXISTS(SELECT *
               FROM  students)
         DROP TABLE students
+        SQL
+        
+  DB(:conn).execute(sql)
+end
+
+def save
+  sql = INSERT INTO students()
+
+
 
   
 end
