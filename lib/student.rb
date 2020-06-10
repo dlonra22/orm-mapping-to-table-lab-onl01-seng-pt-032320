@@ -21,7 +21,10 @@ def self.create_table
 end
 
 def self.drop_table
-  
+  sql = <<-SQL 
+        IF EXISTS(SELECT *
+              FROM  students)
+        DROP TABLE students
 
   
 end
